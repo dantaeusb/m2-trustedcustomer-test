@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/customers/trusted" method="GET">
+        <service class="Dantaeusb\TrustedCustomer\Api\TrustedCustomerRepositoryInterface" method="listTrusted"/>
+        <resources>
+            <resource ref="Magento_Customer::customer"/>
+        </resources>
+        <data>
+            <parameter name="page" force="false">%page%</parameter>
+            <parameter name="pageSize" force="false">%page_size%</parameter>
+        </data>
+    </route>
+</routes>
