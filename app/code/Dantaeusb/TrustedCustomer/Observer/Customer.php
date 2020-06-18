@@ -10,11 +10,6 @@ use Magento\Customer\Model\Customer;
 
 class TrustedCustomer implements ObserverInterface
 {
-    /*public function __construct()
-    {
-
-    }*/
-
     /**
      * Handle customer_register_success event
      *

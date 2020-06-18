@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- @todo: not sure if its needed at all and maybe I should use only DIs -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Api/etc/extension_attributes.xsd">
+    <extension_attributes for="Magento\Customer\Api\Data\CustomerInterface">
+        <attribute code="email" type="string"/>
+    </extension_attributes>
+</config>
